@@ -1,5 +1,5 @@
 var data = require('../models/puppies');
-var tempArray = puppyData.tempPuppyArr, pup,
+var tempArray = puppyData.tempPuppyArr, pup;
 // addPuppy = new puppyData.Puppy(+puppyID, puppyName, +puppyAge);
 
 module.exports = {
