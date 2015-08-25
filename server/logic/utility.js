@@ -13,7 +13,7 @@ module.exports = {
     if (pup.length > 0) {
       return pup[0];
     } else {
-      return {message: 'No such puppy.'};
+      return {message: 'No such puppy'};
     }
   },
   handlePost: function(puppyID, puppyName, puppyAge) {
@@ -22,7 +22,7 @@ module.exports = {
     });
     if (pup.length > 0) {
       return {
-        message: 'Puppy already exists, idiot.'
+        message: 'Puppy already exists'
       };
     } else {
       var addPuppy = new data.Puppy(
@@ -41,7 +41,7 @@ module.exports = {
     });
     if (pup.length > 0) {
       return {
-        message: 'Puppy already exists, idiot.'
+        message: 'Puppy already exists'
       };
     } else {
      var addPuppy = new data.Puppy(+puppyID, puppyName, +puppyAge);
@@ -60,7 +60,7 @@ module.exports = {
         if (tempArray[i].puppyID === parseInt(puppyID)) {
           var tmpPuppy = tempArray.splice(i, 1)[0];
           return {
-            message: 'That puppy is gone.',
+            message: 'That puppy is gone. Forever.',
             puppy: tmpPuppy
           };
         }
