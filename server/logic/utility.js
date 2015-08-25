@@ -1,6 +1,5 @@
 var data = require('../models/puppies');
-var tempArray = puppyData.tempPuppyArr, pup;
-// addPuppy = new puppyData.Puppy(+puppyID, puppyName, +puppyAge);
+var tempArray = data.tempPuppyArr, pup;
 
 module.exports = {
   allGet: function() {
@@ -26,7 +25,7 @@ module.exports = {
         message: 'Puppy already exists, idiot.'
       };
     } else {
-      var addPuppy = new puppyData.Puppy(
+      var addPuppy = new data.Puppy(
         +puppyID, puppyName, +puppyAge
         );
       tempArray.push(addPuppy);
@@ -45,7 +44,7 @@ module.exports = {
         message: 'Puppy already exists, idiot.'
       };
     } else {
-     var addPuppy = new puppyData.Puppy(+puppyID, puppyName, +puppyAge);
+     var addPuppy = new data.Puppy(+puppyID, puppyName, +puppyAge);
       tempArray.push(addPuppy);
       return {
         message: 'success', puppy: addPuppy
